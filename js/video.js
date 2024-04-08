@@ -70,7 +70,7 @@ document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = slider.value / 100;
 	console.log('The current value is ' + video.volume);
 	volumeSpan.innerHTML = slider.value + '%'
-	console.log(volumeSpan.outerHTML)
+	console.log(volumeSpan)
 });
 
 // Utilize the existing oldSchool class on the video element
