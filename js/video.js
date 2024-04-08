@@ -14,6 +14,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	console.log("The current volume is " + video.volume)
 });
 
 // Pause the video
@@ -66,7 +67,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 // Change the volume based on the slider and update the volume information in console.
 var volumeSpan = document.getElementById('volume');
 document.querySelector("#slider").addEventListener("input", function() {
-	// console.log('The current value is ' + video.volume)
+	console.log('The current value is ' + video.volume)
 	video.volume = slider.value / 100;
 	console.log('The current value is ' + video.volume);
 	volumeSpan.innerHTML = slider.value + '%'
